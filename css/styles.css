@@ -11,6 +11,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
+  --black-opacity-05 : rgba(0, 0, 0, 0.5);
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -4042,7 +4043,7 @@ input[type=button].btn-block {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
-  background-color: rgba(26, 188, 156, 0.5) !important;
+  background-color: var(--black-opacity-05) !important;
   border: 0.125rem solid transparent;
   border-radius: 0.5rem;
 }
@@ -10070,7 +10071,7 @@ h3 {
 .scroll-to-top a {
   width: 3.5rem;
   height: 3.5rem;
-  background-color: rgba(33, 37, 41, 0.5);
+  background-color: var(--black-opacity-05);
   line-height: 3.1rem;
 }
 
@@ -10118,11 +10119,11 @@ h3 {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
-    background: #1abc9c;
+    background: var(--black-opacity-05);
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: #1abc9c;
+    background: var(--black-opacity-05);
   }
 
   #mainNav.navbar-shrink {
