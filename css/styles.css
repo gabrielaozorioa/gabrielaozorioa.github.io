@@ -6098,7 +6098,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #FF9B9B !important;
+  background-color: rgba(255, 155, 155, 0.8) !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -10002,7 +10002,7 @@ h3 {
   }
 }
 .page-section {
-  padding: 6rem 0;
+  padding: 4rem 0;
 }
 .page-section .page-section-heading {
   font-size: 2.25rem;
@@ -10176,10 +10176,10 @@ h3 {
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(26, 188, 156, 0.9);
+  background-color: rgba(10, 9, 9, 0.7);
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
-  opacity: 1;
+  opacity: 0.2;
 }
 .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
   font-size: 1.5rem;
