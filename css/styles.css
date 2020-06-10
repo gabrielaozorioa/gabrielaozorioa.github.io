@@ -12,6 +12,7 @@
  */
 :root {
   --black-opacity-05 : rgba(0, 0, 0, 0.5);
+  --black-opacity-07 : rgba(0, 0, 0, 0.7);
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -10168,10 +10169,12 @@ h3 {
 
 .portfolio-item-title {
   font-family: var(--font-family-monospace);
+  font-size: 1.1rem;
+  letter-spacing: 0px;
   position: absolute;
   width: 100%;
   bottom: 0;
-  background-color: var(--black-opacity-05);
+  background-color: var(--black-opacity-07);
 }
 
 @media (min-width: 992px) {
