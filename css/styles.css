@@ -10215,7 +10215,7 @@ h3 {
 }
 @media (min-width: 992px) {
   .portfolio-modal .portfolio-modal-title {
-    font-size: 3rem;
+    font-size: 1.5rem;
     line-height: 2.5rem;
   }
 }
@@ -10224,9 +10224,9 @@ h3 {
   z-index: 1;
   right: 1.5rem;
   top: 1rem;
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 3rem;
-  color: #1abc9c;
+  color: rgba(0, 0, 0, 0.8);
   opacity: 1;
 }
 
