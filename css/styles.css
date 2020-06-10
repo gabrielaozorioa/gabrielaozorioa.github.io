@@ -11,7 +11,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
-  --main-font: "consolas";
   --black-opacity-05 : rgba(0, 0, 0, 0.5);
   --blue: #007bff;
   --indigo: #6610f2;
@@ -40,7 +39,7 @@
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
   --font-family-sans-serif: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-monospace: "consolas", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-family-monospace: Consolas, Menlo, Monaco, SFMono-Regular, "Liberation Mono", "Courier New", monospace;
 }
 
 *,
@@ -187,7 +186,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: var(--font-family-monospace);
   font-size: 1em;
 }
 
@@ -366,7 +365,7 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: "consolas", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-family-monospace);
   font-weight: normal;
   line-height: 1.2;
 }
@@ -3991,6 +3990,7 @@ input[type=button].btn-block {
 }
 
 .navbar {
+  font-family: var(--font-family-monospace);
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -9688,7 +9688,7 @@ button.bg-dark:focus {
 }
 
 .text-monospace {
-  font-family: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+  font-family: var(--font-family-monospace) !important;
 }
 
 .text-justify {
@@ -10092,7 +10092,7 @@ h3 {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  font-family: "consolas", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-family-monospace);
   font-weight: 700;
 }
 #mainNav .navbar-brand {
@@ -10167,7 +10167,7 @@ h3 {
 }
 
 .portfolio-item-title {
-  font-family: "consolas";
+  font-family: var(--font-family-monospace);
   position: absolute;
   width: 100%;
   bottom: 0;
