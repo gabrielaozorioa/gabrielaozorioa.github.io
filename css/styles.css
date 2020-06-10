@@ -161,12 +161,12 @@ sup {
 }
 
 a {
-  color: #1abc9c;
+  color: #000000;
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #117964;
+  color: #000000;
   text-decoration: underline;
 }
 
@@ -4052,9 +4052,8 @@ input[type=button].btn-block {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
-  background-color: var(--black-opacity-05) !important;
-  border: 0.125rem solid transparent;
-  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  border: 0;
 }
 .navbar-toggler:hover, .navbar-toggler:focus {
   text-decoration: none;
@@ -4300,7 +4299,6 @@ input[type=button].btn-block {
 }
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.5);
-  border-color: rgba(0, 0, 0, 0.1);
 }
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -4338,7 +4336,6 @@ input[type=button].btn-block {
 }
 .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.5);
-  border-color: rgba(255, 255, 255, 0.1);
 }
 .navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -9813,15 +9810,15 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #1abc9c !important;
+  color: #000000 !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #117964 !important;
+  color: #000000 !important;
 }
 
 .text-secondary {
-  color: #2c3e50 !important;
+  color: #000000 !important;
 }
 
 a.text-secondary:hover, a.text-secondary:focus {
@@ -10084,7 +10081,7 @@ h3 {
 .scroll-to-top a {
   width: 3.5rem;
   height: 3.5rem;
-  background-color: var(--black-opacity-05);
+  background-color: rgba(255, 255, 255, 0.5);
   line-height: 3.1rem;
 }
 
