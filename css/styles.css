@@ -13,18 +13,18 @@
 :root {
   --black-opacity-05 : rgba(0, 0, 0, 0.5);
   --black-opacity-07 : rgba(0, 0, 0, 0.7);
-  --blue: #007bff;
+  --blue:#006CFF;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
-  --red: #dc3545;
+  --red: #F23D4D;
   --orange: #fd7e14;
   --yellow: #ffc107;
   --green: #28a745;
   --teal: #1abc9c;
   --cyan: #17a2b8;
   --white: #fff;
-  --gray: #6c757d;
+  --gray: #777777;
   --gray-dark: #343a40;
   --primary: #1abc9c;
   --secondary: #2c3e50;
@@ -33,14 +33,14 @@
   --warning: #ffc107;
   --danger: #dc3545;
   --light: #f8f9fa;
-  --dark: #343a40;
+  --dark: #222222;
   --breakpoint-xs: 0;
   --breakpoint-sm: 343px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "SF pro display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-monospace: "SF pro display", Consolas, Menlo, Monaco, SFMono-Regular, "Liberation Mono", "Courier New", monospace;
+  --font-family-sans-serif: "proxima nova", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: "proxima nova", Consolas, Menlo, Monaco, SFMono-Regular, "Liberation Mono", "Courier New", monospace;
   --font-weight: lighter
 }
 
@@ -67,7 +67,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Mulish", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Proxima nova", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -371,7 +371,7 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: "SF Pro Display";
+  font-family: "proxima nova";
   font-weight: normal;
   line-height: 1.2;
 }
@@ -400,11 +400,12 @@ h6, .h6 {
   font-size: 1rem;
 }
 
-.lead {
-  font-family: "Mulish", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1.25rem;
-  font-weight: 300;
-  color: #ffffff;
+.bio-text {
+  font-family: "proxima nova", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  line-height: 2;
 }
 
 .display-1 {
@@ -2448,20 +2449,20 @@ textarea.form-control {
 
 .btn {
   display: inline-block;
-  font-weight: 400;
-  color: #212529;
+  font-weight: 300;
+  color:var(--blue);
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  background-color: #D87A83;
-  border: 0.2rem solid transparent;
+  background-color: #ffffff;
+  border: 0.18rem solid #006CFF;
   padding: 0.375rem 0.75rem;
-  font-size: 20px;
-  line-height: 1.5;
-  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1;
+  border-radius: 25px;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -2470,8 +2471,9 @@ textarea.form-control {
   }
 }
 .btn:hover {
-  color: #ffffff;
+  color:rgb(51, 137, 255);
   text-decoration: none;
+  box-shadow: 0 1px 6px rgba(51, 137, 255,.45)
 }
 .btn:focus, .btn.focus {
   outline: 0;
@@ -2489,20 +2491,19 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #000000;
-  border-color: #000000;
+  color: var(--white);
+  background-color: var(--blue);
+  border-color: var(--blue);
 }
 .btn-primary:hover {
-  color: rgb(0, 0, 0);
-  background-color: #ffffff;
-  border-color: #000000;
+  background-color: rgb(51, 137, 255);
+  border-color: rgb(51, 137, 255);
 }
 .btn-primary:focus, .btn-primary.focus {
-  color: #fff;
-  background-color: #000000;
-  border-color: #000000;
-  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
+  color: var(--blue) !important;
+  border-color: var(--white);
+  background-color: white;
+  box-shadow: 0 1px 6px rgba(32,33,36,.26);
 }
 .btn-primary.disabled, .btn-primary:disabled {
   color: #fff;
@@ -2510,12 +2511,10 @@ fieldset:disabled a.btn {
   border-color: #000000;
 }
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
-  color: #fff;
-  background-color: #000000;
-  border-color: #000000;
-}
-.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
+  color: var(--blue) !important;
+  border-color: var(--white);
+  background-color: white;
+  box-shadow: 0 1px 6px rgba(32,33,36,.26);
 }
 
 .btn-secondary {
@@ -2729,19 +2728,19 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-primary {
-  color: #1abc9c;
-  border-color: #1abc9c;
+  color: #ffffff;
+  border-color: #F23D4D;
 }
 .btn-outline-primary:hover {
-  color: #fff;
-  background-color: #1abc9c;
-  border-color: #1abc9c;
+  color: rgb(255, 255, 255);
+  background-color: #ffffff;
+  border-color: rgb(216, 122, 131);
 }
 .btn-outline-primary:focus, .btn-outline-primary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(26, 188, 156, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
 }
 .btn-outline-primary.disabled, .btn-outline-primary:disabled {
-  color: #1abc9c;
+  color: #555555;
   background-color: transparent;
 }
 .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show > .btn-outline-primary.dropdown-toggle {
@@ -2948,9 +2947,9 @@ fieldset:disabled a.btn {
 
 .btn-lg, .btn-group-lg > .btn {
   padding: 0.5rem 1rem;
-  font-size: 1.25rem;
-  line-height: 1.5;
-  border-radius: 0.75rem;
+  font-size: 16px;
+  height: 40px;
+  min-width: 115px;
 }
 
 .btn-sm, .btn-group-sm > .btn {
@@ -6124,7 +6123,7 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-  background-color: #747373 !important;
+  background-color: white !important;
 }
 
 .bg-terciary {
@@ -10103,8 +10102,8 @@ h3 {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  font-family: "SF pro display";
-  font-weight: 700;
+  font-family: "proxima nova";
+  font-weight: 500;
 }
 #mainNav .navbar-brand {
   color: #fff;
@@ -10113,10 +10112,10 @@ h3 {
   margin-top: 1rem;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link {
-  color: rgb(0, 0, 0);
+  color: #ffffff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  text-decoration: underline ;
+  text-decoration: rgb(204, 119, 126);
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
   color: #fff;
@@ -10161,15 +10160,15 @@ h3 {
   }
 }
 .masthead {
-  padding-top: calc(6rem + 74px);
-  padding-bottom: 6rem;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 .masthead .masthead-heading {
-  font-size: 2.75rem;
-  line-height: 2.75rem;
+  font-size: 130px;
 }
 .masthead .masthead-subheading {
-  font-size: 20px;
+  color: var(--gray);
+  font-size: 26px;
 }
 .masthead .masthead-avatar {
   width: 15rem;
@@ -10183,20 +10182,6 @@ h3 {
   width: 100%;
   bottom: 0;
   background-color: var(--black-opacity-07);
-}
-
-@media (min-width: 992px) {
-  .masthead {
-    padding-top: calc(6rem + 104px);
-    padding-bottom: 6rem;
-  }
-  .masthead .masthead-heading {
-    font-size: 4rem;
-    line-height: 3.5rem;
-  }
-  .masthead .masthead-subheading {
-    font-size: 20px;
-  }
 }
 .portfolio .portfolio-item {
   cursor: pointer;
@@ -10296,4 +10281,36 @@ form .row:first-child .floating-label-form-group {
 
 .copyright {
   background-color: #ffffff;
+}
+
+.tooltip-my-email {
+  position: relative;
+  display: inline-block;
+  cursor: default;
+}
+
+.tooltip-my-email .tooltip-my-email-text {
+  visibility: hidden;
+  color: var(--blue);
+  text-align: center;
+  border-radius: 25px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 77%;
+  left: 65%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  font-family: "proxima nova";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  border: 1px solid var(--blue);
+  cursor: default;
+}
+
+.tooltip-my-email:hover .tooltip-my-email-text {
+  visibility: visible;
+  opacity: 1;
 }

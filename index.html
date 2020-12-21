@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>gabriela ozório</title>
+        <title>Gabriela – Hello there.</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/favicon/light_bulb.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -17,47 +17,54 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
+        <!-- Masthead-->
+        <header class="masthead text-primary text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <h1 class="masthead-heading font-weight-bolder">Gabriela</h1>
+                </div>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-lighter mb-0">Product Design - Human Behavior - Business Disruption<br>Architecture - Urban Planning</p>
+            </div>
+        </header>
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg fixed-top .hline px-1 py-0 px-lg-1" id="mainNav">
+        <nav class="navbar navbar-expand-lg .hline px-1 py-0 px-lg-1" id="mainNav">
             <div class="container">
                 <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold ml-auto outline-none" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto mr-auto align-items-end">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-3 js-scroll-trigger" href="#about">about</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-3 js-scroll-trigger" href="#portfolio">architecture</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-3 js-scroll-trigger" href="https://medium.com/@gabrielaozorioa">medium</a></li>
+                    <ul class="navbar-nav ml-auto mr-auto align-items-end mb-4">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="btn btn-lg btn-primary nav-link py-2 px-0 px-lg-3 js-scroll-trigger" href="assets/cv/gabriela_curriculum.pdf" target="_blank">Curriculum</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="btn btn-lg btn-primary nav-link py-2 px-0 px-lg-3 js-scroll-trigger" href="https://www.linkedin.com/in/gabrielaozorioa/" target="_blank">Linkedin</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="btn btn-lg btn-primary nav-link py-2 px-0 px-lg-3 js-scroll-trigger" href="https://medium.com/@gabrielaozorioa" target="_blank">Medium</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- Masthead-->
-        <header class="masthead text-dark text-center">
-            <div class="container d-flex align-items-center flex-column">
-                <h1 class="masthead-heading mb-0"><b>Gabriela Ozorio</b></h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                </div>
-                <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-normal mb-0">Product Design - Architecture - Urban Planning - Design and Human Behavior</p>
-            </div>
-        </header>
         <!-- About Section-->
         <section class="page-section mb-0 bg-secondary" id="about">
             <div class="container">
                 <!-- About Section Heading-->
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ml-auto"><p class="lead">Hi there.<br><br>I'm <b>Gabi</b>, born in 94, raised in Recife and currently living in São Paulo. I'm currently working as a <b>Product Designer</b> at Platform Builders.</div>
-                    <div class="col-lg-4 mr-auto"><p class="lead"><br><br>Mail me at <b>ozoriodegabriela@gmail.com</b> for inquiries or a new project & check out my portfolio by clicking the button bellow.</p></div>
+                    <div class="col-lg-4 ml-auto"><p class="bio-text">I'm <b>Gabi</b>, born in 94, raised in Recife and currently living in São Paulo. I'm currently working as a <b>Product Designer</b> at Platform Builders.</div>
+                    <div class="col-lg-4 mr-auto">
+                        <div class="bio-text">
+                            Mail me at 
+                            <div class="tooltip-my-email">
+                                <span class="tooltip-my-email-text" id="tooltipMyEmail">Click & Copy</span>
+                                <span id="myEmail"><b>ozoriodegabriela@gmail.com</b></span>
+                            </div> 
+                            for inquiries or a new project & check out my portfolio by clicking the button bellow.
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
          <!-- About Section Button-->
-         <div class="text-center mt-8">
-            <a class="btn btn-xl btn-outline-light" href="assets/ptf/Portfolio - Gabriela Ozório.pdf">Download my <b>portfolio</b> here</a>
+         <div class="text-center mt-4">
+            <a class="btn btn-lg" href="assets/ptf/gabriela_portfolio.pdf" target="_blank">Download my <b>portfolio</b> here</a>
          </div>
         <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
+        <section class="page-section portfolio" id="portfolio" style="display:none"> 
             <h4 class="text-center mt-8 mb-5 text-dark font-weight-bold"><p>architecture projects</p>
             </h4>
             <div class="container">
@@ -119,15 +126,12 @@
             <div class="container">
                 <div class="row" style="padding-top: 2rem">
                     <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="mb-0">-</h4>
-                        <p class="lead mb-0 text-dark">center, São Paulo<br />SP. Brazil</p>
+                    <div class="col-lg-4 mb-5 mb-lg-0 mt-8">
+                        <p class="mb-0 text-dark">São Paulo</p>
                     </div>
                     <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="mb-0">-</h4>
-                        <a class="btn btn-outline-light btn-social mx-1 mt-2" href="https://www.linkedin.com/in/gabriela-oz%C3%B3rio-b44b92bb/"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1 mt-2" href="https://dribbble.com/gabrielaozorioa"><i class="fab fa-fw fa-dribbble"></i></a>
+                    <div class="col-lg-4 mb-5 mb-lg-0 mt-8">
+                        <p class="mb-0 text-dark">SP – Brazil</p>
                     </div>
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center">

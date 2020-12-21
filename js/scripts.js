@@ -64,6 +64,44 @@
         $(this).removeClass("floating-label-form-group-with-focus");
       });
     });
+
+    const myEmail = document.getElementById("myEmail");
+    const tooltipMyEmail = document.getElementById("tooltipMyEmail");
+
+    myEmail.onclick = function() {
+      document.execCommand("copy");
+    }
+
+    tooltipMyEmail.onclick = function() {
+      document.execCommand("copy");
+    }
+
+    myEmail.addEventListener("copy", function(event) {
+      event.preventDefault();
+      if (event.clipboardData) {
+        event.clipboardData.setData("text/plain", myEmail.textContent);
+        var tooltipMyEmail = document.getElementById("tooltipMyEmail");
+        tooltipMyEmail.innerHTML = "Copied!";
+      }
+    });
+
+    tooltipMyEmail.addEventListener("copy", function(event) {
+      event.preventDefault();
+      if (event.clipboardData) {
+        event.clipboardData.setData("text/plain", myEmail.textContent);
+        tooltipMyEmail.innerHTML = "Copied!";
+      }
+    });
+
+    myEmail.onmouseout = function() {
+      var tooltipMyEmail = document.getElementById("tooltipMyEmail");
+      tooltipMyEmail.innerHTML = "Click & Copy";
+    }
+
+    tooltipMyEmail.onmouseout = function() {
+      var tooltipMyEmail = document.getElementById("tooltipMyEmail");
+      tooltipMyEmail.innerHTML = "Click & Copy";
+    }
   
   })(jQuery); // End of use strict
   
