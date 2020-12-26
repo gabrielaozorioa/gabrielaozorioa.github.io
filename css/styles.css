@@ -10015,20 +10015,6 @@ h3 {
   width: 15rem;
 }
 
-@media (max-width: 767.98px) {
-  .masthead {
-    padding-bottom: 10px;
-  }
-  .masthead .masthead-heading {
-    font-size: 70px;
-  }
-  .masthead .masthead-subheading {
-    color: var(--gray);
-    font-size: 12px;
-    font-weight: normal;
-  }
-}
-
 .portfolio-item-title {
   font-family: "SF pro display";
   font-size: 1.1rem;
@@ -10191,7 +10177,19 @@ form .row:first-child .floating-label-form-group {
 
 
 
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
+  .masthead {
+    padding-bottom: 10px;
+  }
+  .masthead .masthead-heading {
+    font-size: 70px;
+  }
+  .masthead .masthead-subheading {
+    color: var(--gray);
+    font-size: 12px;
+    font-weight: normal;
+  }
+
   .navbar-nav {
     display: flex;
     flex-direction: row;
