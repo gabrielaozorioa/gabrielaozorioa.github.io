@@ -10009,12 +10009,13 @@ h3 {
 .masthead .masthead-subheading {
   color: var(--gray);
   font-size: 26px;
+  font-weight: lighter;
 }
 .masthead .masthead-avatar {
   width: 15rem;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .masthead {
     padding-bottom: 10px;
   }
@@ -10024,6 +10025,7 @@ h3 {
   .masthead .masthead-subheading {
     color: var(--gray);
     font-size: 12px;
+    font-weight: normal;
   }
 }
 
@@ -10189,7 +10191,7 @@ form .row:first-child .floating-label-form-group {
 
 
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .navbar-nav {
     display: flex;
     flex-direction: row;
